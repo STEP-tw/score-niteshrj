@@ -24,3 +24,9 @@
   background-color: blue;
   border-radius: 50%;
 }
+#score {
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+}
