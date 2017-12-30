@@ -1,4 +1,5 @@
 ✔ Find a way to display score. @done(2017-12-30 14:41)
 ✔ Make score visible at bottom. @done(2017-12-30 14:52)
 ✔ Set the initial score 0. @done(2017-12-30 14:52)
-☐ Update it when snake eats food.
+✔ Update it when snake eats food. @done(2017-12-30 15:03)
+☐ find a good way to update score.
