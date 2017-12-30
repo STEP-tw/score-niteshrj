@@ -4,12 +4,11 @@ let numberOfRows=60;
 let numberOfCols=120;
 
 let animator=undefined;
-let scoreNumber = 10;
 
 const updateScore = function(){
-  let score = document.getElementById('score');
-  score.innerHTML = `Score: ${scoreNumber}`;
-  scoreNumber+=10
+  let score = new Score(0,10);
+  let scoreText = document.getElementById('score');
+  scoreText.innerHTML = `Score: ${score.getUpdatedScore()}`;
 }
 
 const animateSnake=function() {
