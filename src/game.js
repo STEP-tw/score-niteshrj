@@ -4,6 +4,7 @@ const Game=function(topLeft,bottomRight) {
   this.snake={};
   this.food={};
   this.updatedScore = 0;
+  this.score = {};
 }
 
 Game.prototype.addSnake=function(snake) {
@@ -60,5 +61,12 @@ Game.prototype.createFood=function() {
 
 Game.prototype.updateScore = function(score){
   let scoreText = document.getElementById('score');
-  scoreText.innerHTML = `Score: ${score.getUpdatedScore()}`;
+  let updatedScore = this.score.getUpdatedScore();
+  scoreText.innerHTML = `Score: ${updatedScore}`;
+}
+
+Game.prototype.createScore = function(){
+  let initialScore = 0;
+  let numToIncreaseScore = 10;
+  this.score = new Score(initialScore,numToIncreaseScore);
 }
