@@ -60,11 +60,9 @@ Game.prototype.createFood=function() {
 }
 
 Game.prototype.getUpdatedScore = function(score){
-  // let scoreText = document.getElementById('score');
   let updatedScore = this.score.getUpdatedScore();
   let scoreText = `Score: ${updatedScore}`;
   return scoreText;
-  // scoreText.innerHTML = `Score: ${updatedScore}`;
 }
 
 Game.prototype.createScore = function(){
